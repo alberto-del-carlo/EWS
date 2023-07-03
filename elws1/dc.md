@@ -1,4 +1,4 @@
 # Documents
 Under construction
 
-[Electric WorkStation  1](/EWS/ews1.md)
+[Electric WorkStation  1](/ews1.md)
