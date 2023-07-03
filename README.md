@@ -1,2 +1,2 @@
 # IIS Galilei Viareggio
-digital laboratory for electrical machines
+digital laboratory for electrical work station
