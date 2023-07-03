@@ -1,3 +1,3 @@
-# Wirings Diagrams
+# Electric WorkStation ONE
 under construction
 
