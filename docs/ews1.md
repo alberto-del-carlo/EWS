@@ -1,3 +1,3 @@
-# Electric WorkStation ONE
+# Electric WorkStation 1
 under construction
 
