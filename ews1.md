@@ -5,7 +5,7 @@ Per proseguire con l'attività di laboratorio completa i campi sottostanti
 
 <input class="input is-info" type="text" placeholder="Corrente di eccitazione del motore DC in A ">
 <div class="notification is-danger">
-  <button class="delete"></button>
+ 
   Valore non corretto
 </div>
 <div class="notification is-primary">
