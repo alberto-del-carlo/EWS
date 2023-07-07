@@ -8,7 +8,7 @@ Per proseguire con l'attività di laboratorio completa i campi sottostanti
   <button class="delete"></button>
   Valore non corretto
 </div>
-<div class="notification is-info">
+<div class="notification is-primary">
   <button class="delete"></button>
   Valore corretto
 </div>
