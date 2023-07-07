@@ -4,6 +4,10 @@ Con questa postazione puoi lavorare con un [motore in corrente continua](https:/
 Per proseguire con l'attività di laboratorio completa i campi sottostanti
 
 <input class="input is-info" type="text" placeholder="Corrente di eccitazione del motore in DC in A ">
+<label class="checkbox">
+  <input type="checkbox">
+  check
+</label>
 
 
 
