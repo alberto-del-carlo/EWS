@@ -5,12 +5,10 @@ Per proseguire con l'attività di laboratorio completa i campi sottostanti
 
 <input class="input is-info" type="text" placeholder="Corrente di eccitazione del motore DC in A ">
 <div class="notification is-danger">
- 
-  Valore non corretto
+ Valore non corretto
 </div>
 <div class="notification is-primary">
-  <button class="delete"></button>
-  Valore corretto
+ Valore corretto
 </div>
 
 [Wiring diagrams](/elws1/wd.md) &ensp; [Experience](/elws1/ex.md) &ensp; [Videos](/elws1/vd.md) &ensp; [Documents](/elws1/dc.md) &ensp; [Siemens SCE](https://www.siemens.com/it/it/prodotti/automazione/sce.html)
