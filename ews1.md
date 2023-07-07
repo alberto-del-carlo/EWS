@@ -4,11 +4,13 @@ Con questa postazione puoi lavorare con un [motore in corrente continua](https:/
 Per proseguire con l'attività di laboratorio completa i campi sottostanti
 
 <input class="input is-info" type="text" placeholder="Corrente di eccitazione del motore DC in A ">
-<label class="checkbox">
-  <input type="checkbox">
-  check
-</label>
-
-
+<div class="notification is-warning">
+  <button class="delete"></button>
+  Valore non corretto
+</div>
+<div class="notification is-info">
+  <button class="delete"></button>
+  Valore corretto
+</div>
 
 [Wiring diagrams](/elws1/wd.md) &ensp; [Experience](/elws1/ex.md) &ensp; [Videos](/elws1/vd.md) &ensp; [Documents](/elws1/dc.md) &ensp; [Siemens SCE](https://www.siemens.com/it/it/prodotti/automazione/sce.html)
