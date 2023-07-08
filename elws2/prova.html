@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Marte</title>
-  <!-- Collegamento ai file CSS di Bulma -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>Marte ci siamo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
 </head>
 <body>
-  <div class="container">
-    <div class="field">
-      <label class="label">Corrente di eccitazione:</label>
-      <div class="control">
-        <input id="nameInput" class="input" type="text" placeholder="Inserisci il valore della corrente di eccitazione del motore DC">
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Riconoscimento del numero 8</h1>
+      <div class="field">
+        <label class="label">Inserisci un numero:</label>
+        <div class="control">
+          <input id="numeroInput" class="input" type="number" placeholder="Inserisci un numero">
+        </div>
       </div>
+      <button onclick="verificaNumero()" class="button is-primary">Verifica</button>
     </div>
-  </div>
+  </section>
 
   <script>
-    // Esempio di utilizzo di JavaScript per modificare le classi di un elemento
-    var nameInput = document.getElementById("nameInput");
-
-    // Condizione
-    var condition;
-
-    if nameInput == 8 {
-      condition = true} else {condition = false}
-    
-    // Modifica delle classi in base alla condizione
-    if (condition) {
-      nameInput.classList.add("is-success"); // Aggiunge la classe "is-danger" per uno stile di input di successo
-    } else {
-      nameInput.classList.add("is-danger "); // Aggiunge la classe "is-success" per uno stile di input pericoloso
+    function verificaNumero() {
+      var numeroInput = document.getElementById('numeroInput').value;
+      if (numeroInput === '8') {
+        var notification = document.createElement('div');
+        notification.classList.add('notification', 'is-success');
+        notification.innerHTML = 'Hai inserito il numero 8!';
+        document.body.appendChild(notification);
+      }
     }
   </script>
 </body>
 </html>
-
