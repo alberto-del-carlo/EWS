@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Marte ci siamo</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <title>Marte siamo vicini vicini</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
   <section class="section">
     <div class="container">
-      <h1 class="title">Riconoscimento del numero 8</h1>
-      <div class="field">
-        <label class="label">Inserisci un numero:</label>
-        <div class="control">
-          <input id="numeroInput" class="input" type="number" placeholder="Inserisci un numero">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <h1 class="title">Indovina il numero</h1>
+          <div class="field">
+            <label class="label">Inserisci il numero 8:</label>
+            <div class="control">
+              <input id="numero-input" class="input" type="number" min="0" max="9">
+            </div>
+          </div>
+          <button id="verifica-button" class="button is-primary">Verifica</button>
+          <div id="risposta-notifica" class="notification" style="display: none;"></div>
         </div>
       </div>
-      <button onclick="verificaNumero()" class="button is-primary">Verifica</button>
     </div>
   </section>
 
   <script>
-    function verificaNumero() {
-      var numeroInput = document.getElementById('numeroInput').value;
-      if (numeroInput === '8') {
-        var notification = document.createElement('div');
-        notification.classList.add('notification', 'is-success');
-        notification.innerHTML = 'Hai inserito il numero 8!';
-        document.body.appendChild(notification);
+    const verificaButton = document.getElementById('verifica-button');
+    const numeroInput = document.getElementById('numero-input');
+    const rispostaNotifica = document.getElementById('risposta-notifica');
+
+    verificaButton.addEventListener('click', function() {
+      const numeroInserito = parseInt(numeroInput.value);
+
+      if (numeroInserito === 8) {
+        rispostaNotifica.classList.add('is-success');
+        rispostaNotifica.classList.remove('is-danger');
+        rispostaNotifica.innerHTML = 'Hai indovinato! Il numero è 8.';
+      } else {
+        rispostaNotifica.classList.add('is-danger');
+        rispostaNotifica.classList.remove('is-success');
+        rispostaNotifica.innerHTML = 'Spiacente, hai sbagliato. Riprova.';
       }
-    }
+
+      rispostaNotifica.style.display = 'block';
+    });
   </script>
 </body>
 </html>
+
