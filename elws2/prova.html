@@ -8,9 +8,9 @@
 <body>
   <div class="container">
     <div class="field">
-      <label class="label">Nome:</label>
+      <label class="label">Corrente di eccitazione:</label>
       <div class="control">
-        <input id="nameInput" class="input" type="text" placeholder="Inserisci il tuo nome">
+        <input id="nameInput" class="input" type="text" placeholder="Inserisci il valore della corrente di eccitazione del motore DC">
       </div>
     </div>
   </div>
@@ -20,13 +20,16 @@
     var nameInput = document.getElementById("nameInput");
 
     // Condizione
-    var condition = true;
+    var condition;
 
+    if nameInput == 8 {
+      condition = true} else {condition = false}
+    
     // Modifica delle classi in base alla condizione
     if (condition) {
-      nameInput.classList.add("is-danger"); // Aggiunge la classe "is-danger" per uno stile di input pericoloso
+      nameInput.classList.add("is-success"); // Aggiunge la classe "is-danger" per uno stile di input pericoloso
     } else {
-      nameInput.classList.add("is-success"); // Aggiunge la classe "is-success" per uno stile di input di successo
+      nameInput.classList.add("is-danger "); // Aggiunge la classe "is-success" per uno stile di input di successo
     }
   </script>
 </body>
