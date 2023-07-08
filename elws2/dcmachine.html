@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    #darkcyan-section {
+        height: 50.0vh;
+        background-color: darkcyan;
+        display: flex;
+   }
+</style>
+</head>
+<body>
+    <div id="darkcyan-section"></div>
+</body>
+
+  <style>
+        .custom-text {
+            position: absolute;
+            top: 100px;
+            left: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-text">
+        <h1 class="title has-text-white">Dati di targa Macchina in DC</h1>
+    </div>
+</body>
+  
+<head>
+  <title>Macchina in DC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+  
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <h1 class="title">Dati di targa Macchina in DC</h1>
+          <div class="field">
+            <label class="label">Inserisci la corrente di eccitazione del motore in DC</label>
+            <div class="control">
+              <input id="numero-input" class="input" type="number" min="0" max="9">
+            </div>
+          </div>
+          <button id="verifica-button" class="button is-info">Verifica</button>
+          <hr>
+          <div id="risposta-notifica" class="notification" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const verificaButton = document.getElementById('verifica-button');
+    const numeroInput = document.getElementById('numero-input');
+    const rispostaNotifica = document.getElementById('risposta-notifica');
+
+    verificaButton.addEventListener('click', function() {
+      const numeroInserito = parseInt(numeroInput.value);
+
+      if (numeroInserito === 8) {
+        rispostaNotifica.classList.add('is-success');
+        rispostaNotifica.classList.remove('is-danger');
+        rispostaNotifica.innerHTML = 'Risposta CORRETTA';
+      } else {
+        rispostaNotifica.classList.add('is-danger');
+        rispostaNotifica.classList.remove('is-success');
+        rispostaNotifica.innerHTML = 'Spiacente, hai sbagliato. Riprova.';
+      }
+
+      rispostaNotifica.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
 
