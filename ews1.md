@@ -2,13 +2,17 @@
 Con questa postazione puoi lavorare con un [motore in corrente continua](https://www.youtube.com/watch?v=XiHJaAGSrr4) che trascina in rotazione un  [alternatore](https://www.youtube.com/watch?v=ACfgcQRJwEc&list=RDCMUCy7B6ojkL8QoXULlDatjt1Q&index=1) 
 
 Per proseguire con l'attività di laboratorio completa i campi sottostanti
-
-<input class="input is-info" type="text" placeholder="Corrente di eccitazione del motore DC in A ">
-<div class="notification is-danger">
+<tbody><input class="input is-info" type="text" id="risp1" placeholder="Corrente di eccitazione del motore DC in A "> 
+ {% set t=states('risp1')|float(0)%}
+ {{<div class="notification is-danger">
  Valore non corretto
-</div>
-<div class="notification is-primary">
+</div> if t=!8 else <div class="notification is-primary">
  Valore corretto
-</div>
+</div> 
+</tbody>
+
+
+
+
 
 [Wiring diagrams](/elws1/wd.md) &ensp; [Experience](/elws1/ex.md) &ensp; [Videos](/elws1/vd.md) &ensp; [Documents](/elws1/dc.md) &ensp; [Siemens SCE](https://www.siemens.com/it/it/prodotti/automazione/sce.html)
