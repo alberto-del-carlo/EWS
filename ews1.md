@@ -4,11 +4,8 @@ Con questa postazione puoi lavorare con un [motore in corrente continua](https:/
 Per proseguire con l'attività di laboratorio completa i campi sottostanti
 <tbody><input class="input is-info" type="text" id="risp1" placeholder="Corrente di eccitazione del motore DC in A "> 
  {% set t=states('risp1')|float(0)%}
- {{<div class="notification is-danger">
- Valore non corretto
-</div> if t=!8 else <div class="notification is-primary">
- Valore corretto
-</div> }}
+ {{<div class="notification is-danger"> Valore non corretto </div> if t=!8 
+    else <div class="notification is-primary"> Valore corretto </div> }}
 </tbody>
 
 
