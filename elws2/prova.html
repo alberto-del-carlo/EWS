@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Marte</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"  crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous" />
-
+  <!-- Collegamento ai file CSS di Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
-    <div class="container is-fluid">
-        <!-- Add Bulma Magic Here -->
-<button class="button is-primary is-small">Small</button>
-<button class="button is-link">Default</button>
-<button class="button is-warning is-normal">Normal</button>
-<button class="button is-success is-medium">Medium</button>
-<button class="button is-danger  is-large">Large</button>
+  <div class="container">
+    <div class="field">
+      <label class="label">Nome:</label>
+      <div class="control">
+        <input id="nameInput" class="input" type="text" placeholder="Inserisci il tuo nome">
+      </div>
     </div>
+  </div>
+
+  <script>
+    // Esempio di utilizzo di JavaScript per modificare le classi di un elemento
+    var nameInput = document.getElementById("nameInput");
+
+    // Condizione
+    var condition = true;
+
+    // Modifica delle classi in base alla condizione
+    if (condition) {
+      nameInput.classList.add("is-danger"); // Aggiunge la classe "is-danger" per uno stile di input pericoloso
+    } else {
+      nameInput.classList.add("is-success"); // Aggiunge la classe "is-success" per uno stile di input di successo
+    }
+  </script>
 </body>
 </html>
+
