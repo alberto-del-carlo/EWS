@@ -8,7 +8,7 @@ Per proseguire con l'attività di laboratorio completa i campi sottostanti
  Valore non corretto
 </div> if t=!8 else <div class="notification is-primary">
  Valore corretto
-</div> 
+</div> }}
 </tbody>
 
 
