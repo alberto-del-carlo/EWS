@@ -1,4 +1,0 @@
-# Wiring Diagrams
-Under construction
-
-
