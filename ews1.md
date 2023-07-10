@@ -18,8 +18,13 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
       </tr>
       <tr>
         <td>Una volta completati i dati richiesti salva il file in formato CSV in una cartella personalizzata per poterla aprire successivamente con Google Sheets</td>
-        <td>Saper importare il file in un foglio di calcolo per l'analisi successiva dei dati in modo da poter tracciare il grafico della tensione a vuoto ai morsetti dell'alternatore ed il grafico dell'impedenza sincrona</td>
+        <td>Saper importare il file in un foglio di calcolo per l'analisi successiva dei dati</td>
       </tr>
+      <tr>
+        <td>Attraverso l'azionamento modifica la velocità di rotazione del motore in DC e misura la tensione a vuoto ai morsetti dell'alternatore riportando le misure su sul foglio di lavoro</td>
+        <td>Saper tracciare il grafico della tensione a vuoto ai morsetti dell'alternatore ed il grafico dell'impedenza sincrona</td>
+      </tr>
+      
     </tbody>
   </table>
 </div>
