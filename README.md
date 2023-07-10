@@ -8,5 +8,8 @@ digital laboratory for Electrical Work Station EWS
 
 <img src="image/asincrono.png" width="160" height="110">&ensp;[EWS2 azionamento Motore Asincrono](/ews2.md)
 
+<img src="image/sincrono.png" width="160" height="110">&ensp;[EWS2 azionamento Motore Sincrono](/ews3.md)
 
-[EWS2](/ews2.md) &ensp;[EWS3](/ews3.md) &ensp;[EWS4](/ews4.md) &ensp;[EWS5](/ews5.md) &ensp;[EWS6](/ews6.md) 
+<img src="image/asincrono.png" width="160" height="110">&ensp;[EWS2 azionamento Motore Sincrono con Dinamo](/ews4.md)
+
+
