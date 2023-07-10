@@ -13,12 +13,12 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
     </thead>
     <tbody>
       <tr>
-        <td>Per proseguire con l'attività di laboratorio completa i dati di targa delle macchine DC ed AC sincrona</td>
+        <td>Per proseguire con l'attività di laboratorio rileva i dati di targa delle macchine DC ed AC sincrona</td>
         <td>Saper leggere i dati di targa di una macchina elettrica e saper distinguere le alimentazioni in DC ed in AC</td>
       </tr>
       <tr>
-        <td>Riga 2, Colonna 1</td>
-        <td>Riga 2, Colonna 2</td>
+        <td>Una volta completati i dati richiesti salva il file in formato CSV in una cartella personalizzata per poterla aprire successivamente con Google Sheets</td>
+        <td>Saper importare il file in un foglio di calcolo per l'analisi successiva dei dati</td>
       </tr>
     </tbody>
   </table>
