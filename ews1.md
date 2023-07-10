@@ -21,7 +21,7 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
         <td>Saper importare il file in un foglio di calcolo per l'analisi successiva dei dati</td>
       </tr>
       <tr>
-        <td>Attraverso l'azionamento modifica la velocità di rotazione del motore in DC e misura la tensione a vuoto ai morsetti dell'alternatore riportando le misure su sul foglio di lavoro</td>
+        <td>Attraverso l'azionamento modifica la velocità di rotazione del motore in DC e misura la tensione a vuoto ai morsetti dell'alternatore riportando le misure sul foglio di lavoro. Attenzione questa attività può essere condotta SOLO in presenza dei docenti</td>
         <td>Saper tracciare il grafico della tensione a vuoto ai morsetti dell'alternatore ed il grafico dell'impedenza sincrona</td>
       </tr>
       
