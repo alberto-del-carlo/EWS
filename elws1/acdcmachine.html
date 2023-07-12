@@ -61,6 +61,18 @@
           <button id="verificagiri-button" class="button is-info">Verifica</button>
           <hr>
           <div id="rispostagiri-notifica" class="notification" style="display: none;"></div>
+
+            <div class="field">
+            <label class="label"> </label>
+           <label class="label">Inserisci la potenza nominale del motore</label>
+            <div class="control">
+              <input id="pnom-input" class="input" type="number" placeholder="[kW] Eventuale numero decimale con la virgola">
+            </div>
+          </div>
+          <button id="pnom-button" class="button is-info">Verifica</button>
+          <hr>
+          <div id="pnom-notifica" class="notification" style="display: none;"></div>
+          
         </div>
       </div>
     </div>
@@ -71,10 +83,14 @@
     const giriInput = document.getElementById('numerogiri-input');
     const rispostagiri = document.getElementById('rispostagiri-notifica');
 
-    verificagiri.addEventListener('click', function() {
-      const numerogiri = parseInt(giriInput.value);
+    const verificapnom = document.getElementById('pnom-button');
+    const pnomInput = document.getElementById('pnom-input');
+    const rispostapnom = document.getElementById('pnom-notifica');
 
-      if (numerogiri === 1500) {
+    verificagiri.addEventListener('click', function() {
+      const numerogiri = parseString(giriInput.value);
+
+      if (numerogiri === "1500") {
         rispostagiri.classList.add('is-success');
         rispostagiri.classList.remove('is-danger');
         rispostagiri.innerHTML = 'Risposta CORRETTA';
@@ -86,6 +102,23 @@
 
       rispostagiri.style.display = 'block';
     });
+
+ verificapnom.addEventListener('click', function() {
+      const numeropnom = parseString(pnomInput.value);
+
+      if (numeropnom === "0.33") {
+        rispostapnom.classList.add('is-success');
+        rispostapnom.classList.remove('is-danger');
+        rispostapnom.innerHTML = 'Risposta CORRETTA';
+      } else {
+        rispostapnom.classList.add('is-danger');
+        rispostapnom.classList.remove('is-success');
+        rispostapnom.innerHTML = 'Spiacente, hai sbagliato. Riprova.';
+      }
+
+      rispostapnom.style.display = 'block';
+    });
+    
   </script>
 </body>
 </html>
