@@ -83,11 +83,7 @@
     const giriInput = document.getElementById('numerogiri-input');
     const rispostagiri = document.getElementById('rispostagiri-notifica');
 
-    const verificapnom = document.getElementById('pnom-button');
-    const pnomInput = document.getElementById('pnom-input');
-    const rispostapnom = document.getElementById('pnom-notifica');
-
-    verificagiri.addEventListener('click', function() {
+     verificagiri.addEventListener('click', function() {
       const numerogiri = parseString(giriInput.value);
 
       if (numerogiri === "1500") {
@@ -103,22 +99,7 @@
       rispostagiri.style.display = 'block';
     });
 
- verificapnom.addEventListener('click', function() {
-      const numeropnom = parseString(pnomInput.value);
-
-      if (numeropnom === "0,33") {
-        rispostapnom.classList.add('is-success');
-        rispostapnom.classList.remove('is-danger');
-        rispostapnom.innerHTML = 'Risposta CORRETTA';
-      } else {
-        rispostapnom.classList.add('is-danger');
-        rispostapnom.classList.remove('is-success');
-        rispostapnom.innerHTML = 'Spiacente, hai sbagliato. Riprova.';
-      }
-
-      rispostapnom.style.display = 'block';
-    });
-    
+   
   </script>
 </body>
 </html>
