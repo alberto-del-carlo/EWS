@@ -53,38 +53,38 @@
          
           <div class="field">
             <label class="label"> </label>
-           <label class="label">Inserisci la corrente di eccitazione del motore in DC</label>
+           <label class="label">Inserisci il numero di giri nominale del motore</label>
             <div class="control">
-              <input id="numero-input" class="input" type="number" min="0" max="9">
+              <input id="numerogiri-input" class="input" type="number">
             </div>
           </div>
-          <button id="verifica-button" class="button is-info">Verifica</button>
+          <button id="verificagiri-button" class="button is-info">Verifica</button>
           <hr>
-          <div id="risposta-notifica" class="notification" style="display: none;"></div>
+          <div id="rispostagiri-notifica" class="notification" style="display: none;"></div>
         </div>
       </div>
     </div>
   </section>
 
   <script>
-    const verificaButton = document.getElementById('verifica-button');
-    const numeroInput = document.getElementById('numero-input');
-    const rispostaNotifica = document.getElementById('risposta-notifica');
+    const verificagiri = document.getElementById('verificagiri-button');
+    const giriInput = document.getElementById('numerogiri-input');
+    const rispostagiri = document.getElementById('rispostagiri-notifica');
 
-    verificaButton.addEventListener('click', function() {
-      const numeroInserito = parseInt(numeroInput.value);
+    verificagiri.addEventListener('click', function() {
+      const numerogiri = parseInt(giriInput.value);
 
-      if (numeroInserito === 8) {
-        rispostaNotifica.classList.add('is-success');
-        rispostaNotifica.classList.remove('is-danger');
-        rispostaNotifica.innerHTML = 'Risposta CORRETTA';
+      if (numerogiri === 1500) {
+        rispostagiri.classList.add('is-success');
+        rispostagiri.classList.remove('is-danger');
+        rispostagiri.innerHTML = 'Risposta CORRETTA';
       } else {
-        rispostaNotifica.classList.add('is-danger');
-        rispostaNotifica.classList.remove('is-success');
-        rispostaNotifica.innerHTML = 'Spiacente, hai sbagliato. Riprova.';
+        rispostagiri.classList.add('is-danger');
+        rispostagiri.classList.remove('is-success');
+        rispostagiri.innerHTML = 'Spiacente, hai sbagliato. Riprova.';
       }
 
-      rispostaNotifica.style.display = 'block';
+      rispostagiri.style.display = 'block';
     });
   </script>
 </body>
