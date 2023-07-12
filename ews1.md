@@ -11,9 +11,7 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
         <th>Obiettivo didattico da raggiungere</th>
       </tr>
     </thead>
-    
-    <tbody>
-       <tr>
+     <tr>
         <td>Per proseguire con l'attività di laboratorio rileva i dati di targa delle macchine DC ed AC sincrona</td>
         <td>Saper leggere i dati di targa di una macchina elettrica e saper distinguere le alimentazioni in DC ed in AC</td>
       </tr>
@@ -25,8 +23,7 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
         <td>Attraverso l'azionamento modifica la velocità di rotazione del motore in DC e misura la tensione a vuoto ai morsetti dell'alternatore riportando le misure sul foglio di lavoro. Attenzione questa attività può essere condotta SOLO in presenza dei docenti</td>
         <td>Saper tracciare il grafico della tensione a vuoto ai morsetti dell'alternatore ed il grafico dell'impedenza sincrona</td>
       </tr>
-    </tbody>
-   
+       
   </table>
 </div>
 
