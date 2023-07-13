@@ -51,43 +51,104 @@
   Il tuo browser non supporta il tag video.
 </video>
          
-          <div class="field">
-            <label class="label"> </label>
-           <label class="label">Inserisci il numero di giri nominale del motore</label>
+ <div class="container">
+        <h1 class="title">Verifica input</h1>
+        <div class="field">
+            <label class="label">Potenza nominale motore DC [kW]:</label>
             <div class="control">
-              <input id="numerogiri-input" class="input" type="number" placeholder="[RPM] Eventuale numero decimale con la virgola">
+                <input class="input" type="text" id="input1" placeholder="[kW] Eventuale numero decimale con la virgola">
             </div>
-          </div>
-          <button id="verificagiri-button" class="button is-info">Verifica</button>
-          <hr>
-          <div id="rispostagiri-notifica" class="notification" style="display: none;"></div>
-      </div>
+            <p id="input1Notification" class="help"></p>
+        </div>
+
+        <div class="field">
+            <label class="label">Corrente nominale di eccitazione motore DC [A]:</label>
+            <div class="control">
+                <input class="input" type="text" id="input2" placeholder="[A] Eventuale numero decimale con la virgola">
+            </div>
+            <p id="input2Notification" class="help"></p>
+        </div>
+
+        <div class="field">
+            <label class="label">Tensione nominale motore DC [V]:</label>
+            <div class="control">
+                <input class="input" type="text" id="input3" placeholder="[V] Eventuale numero decimale con la virgola">
+            </div>
+            <p id="input3Notification" class="help"></p>
+        </div>
+
+        <div class="field">
+            <label class="label">Numero di giri del motore [rpm]:</label>
+            <div class="control">
+                <input class="input" type="text" id="input4" placeholder="[rpm] Eventuale numero decimale con la virgola">
+            </div>
+            <p id="input4Notification" class="help"></p>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button id="submitButton" class="button is-primary">Verifica</button>
+            </div>
+            <div class="control">
+                <button id="csvButton" class="button is-primary">Salva CSV</button>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <script>
-    const verificagiri = document.getElementById('verificagiri-button');
-    const giriInput = document.getElementById('numerogiri-input');
-    const rispostagiri = document.getElementById('rispostagiri-notifica');
+    <script>
+        var correctValues = {
+            'input1': '0,33',
+            'input2': '0,21',
+            'input3': '110',
+            'input4': '1500'
+        };
 
-     verificagiri.addEventListener('click', function() {
-      const numerogiri = parseString(giriInput.value);
+        function verifyInputs() {
+            for (var inputId in correctValues) {
+                var input = document.getElementById(inputId);
+                var notification = document.getElementById(inputId + 'Notification');
 
-      if (numerogiri === "1500") {
-        rispostagiri.classList.add('is-success');
-        rispostagiri.classList.remove('is-danger');
-        rispostagiri.innerHTML = 'Risposta CORRETTA';
-      } else {
-        rispostagiri.classList.add('is-danger');
-        rispostagiri.classList.remove('is-success');
-        rispostagiri.innerHTML = 'Spiacente, hai sbagliato. Riprova.';
-      }
+                if (input.value === correctValues[inputId]) {
+                    notification.textContent = 'Risposta corretta';
+                    notification.classList.add('is-success');
+                    notification.classList.remove('is-danger');
+                } else {
+                    notification.textContent = 'Spiacente, hai sbagliato. Riprova';
+                    notification.classList.add('is-danger');
+                    notification.classList.remove('is-success');
+                }
+            }
+        }
 
-      rispostagiri.style.display = 'block';
-    });
+        function saveToCSV() {
+            var csvContent = "data:text/csv;charset=utf-8,";
+            var header = "EWS1.\n Pnom-DC [kW]. Iecc-DC [A]. Valim-DC [V]. N°giri [rpm]\n";
+            var row = "";
 
-   
-  </script>
-</body>
+            for (var inputId in correctValues) {
+                var input = document.getElementById(inputId);
+                row += input.value + ".";
+            }
+
+            csvContent += header + row;
+            var encodedUri = encodeURI(csvContent);
+            var link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "datitarga.csv");
+            document.body.appendChild(link);
+            link.click();
+        }
+
+        document.getElementById('submitButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            verifyInputs();
+        });
+
+        document.getElementById('csvButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            saveToCSV();
+        });
+    </script>
+ </body>
 </html>
 
