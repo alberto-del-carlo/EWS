@@ -32,7 +32,6 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
  <body>
    <hr>
   <div class="is-pulled-right">
-    <a href="javascript:history.go(-1)" class="button is-link is-rounded">Torna Indietro</a>
     <a href="/EWS/" class="button is-primary is-rounded">Home</a>
   </div>
             <script>
