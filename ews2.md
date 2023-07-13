@@ -26,7 +26,7 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
   </table>
 </div>
 
-<img src="image/acdcmachine.png" width="190" height="130">&ensp;[Inserisci qui i dati di targa della Macchina DC e dell'Alternatore](/elws1/acdcmachine.html)
+<img src="image/asincrono.png" width="190" height="130">&ensp;[Inserisci qui i dati di targa della Macchina DC e dell'Alternatore](/elws1/acdcmachine.html)
 
  <body>
    <hr>
