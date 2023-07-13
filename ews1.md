@@ -27,10 +27,18 @@ L'esperienza di laboratorio consiste nel gestire un azionamento SIEMENS che perm
   </table>
 </div>
 
-
 <img src="image/acdcmachine.png" width="190" height="130">&ensp;[Inserisci qui i dati di targa della Macchina DC e dell'Alternatore](/elws1/acdcmachine.html)
 
-
+ <body>
+   <hr>
+  <div class="is-pulled-right">
+    <a href="javascript:history.go(-1)" class="button is-link is-rounded">Torna Indietro</a>
+    <a href="/EWS/" class="button is-primary is-rounded">Home</a>
+  </div>
+            <script>
+               defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"
+            </script>
+ </body>
 
 
 
