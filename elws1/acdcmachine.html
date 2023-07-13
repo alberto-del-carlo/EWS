@@ -93,8 +93,11 @@
                 <button id="csvButton" class="button is-primary">Salva CSV</button>
             </div>
         </div>
-    </div>
-
+     </div>
+          
+ <a href="javascript:history.go(-1)" class="button is-link is-rounded">Torna Indietro</a>
+<a href="/" class="button is-primary is-rounded">Home</a>
+          
     <script>
         var correctValues = {
             'input1': '0,33',
@@ -148,6 +151,9 @@
             event.preventDefault();
             saveToCSV();
         });
+      
+      defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"
+      
     </script>
  </body>
 </html>
