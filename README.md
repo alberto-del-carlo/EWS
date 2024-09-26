@@ -10,7 +10,7 @@ digital laboratory for Electrical Work Station EWS
 
 <img src="image/sincrono.png" width="160" height="120">&ensp;[EWS3 azionamento Motore Brushless](/ews3.md)
 
-<img src="image/acdcmotor.png" width="200" height="110">&ensp;[EWS4 azionamento Motore passo-passo](/ews4.md)
+<img src="image/stepper.png" width="200" height="110">&ensp;[EWS4 azionamento Motore passo-passo](/ews4.md)
 
 <img src="image/pasqualini.png" width="130" height="110">&ensp;[EWS5 azionamento Freno Pasqualini](/ews5.md)
 
