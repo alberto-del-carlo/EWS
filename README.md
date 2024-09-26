@@ -12,6 +12,6 @@ digital laboratory for Electrical Work Station EWS
 
 <img src="image/acdcmotor.png" width="200" height="110">&ensp;[EWS4 azionamento Motore passo-passo](/ews4.md)
 
-<img src="image/pasqualini.png" width="180" height="110">&ensp;[EWS5 azionamento Freno Pasqualini](/ews5.md)
+<img src="image/pasqualini.png" width="100" height="110">&ensp;[EWS5 azionamento Freno Pasqualini](/ews5.md)
 
 
